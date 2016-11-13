@@ -10,8 +10,8 @@ import (
 
 func main(){
 	randomArr := getRandomArray(100, 1000);
-	fmt.Println(randomArr);
-	fmt.Println(lib.QuickSort(randomArr))
+	fmt.Println("Random array is", randomArr);
+	fmt.Println("Sorted array is", lib.QuickSort(randomArr))
 }
 
 func getRandomArray(size, maxVal int) []int {
