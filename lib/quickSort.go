@@ -46,9 +46,7 @@ func partition (arr []int, left, right int) int{
 }
 
 func swap (arr[] int, fromIndex, toIndex int) []int{
-	fromIndexVal := arr[fromIndex]
-	arr[fromIndex] = arr[toIndex]
-	arr[toIndex] = fromIndexVal
+	arr[fromIndex], arr[toIndex] = arr[toIndex], arr[fromIndex];
 
 	return arr
 }
